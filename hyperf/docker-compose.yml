@@ -1,0 +1,28 @@
+version: '3.9'
+
+services:
+  redis:
+    image: redis:6.2-alpine
+
+  db:
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    
+  app:
+    build:
+      context: .
+      target: dev
+    volumes:
+      - ./:/opt/www
+    ports:
+      - 9501:9501
+    env_file:
+      - ./.env
+    links:
+      - redis
+      - db
