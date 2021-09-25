@@ -71,9 +71,9 @@ Please make sure to update tests as appropriate. -->
 ---
 
 <p align="center">
-    Done with ♥ by <a style="font-weight: bold" href="https://www.linkedin.com/in/filipe1309/">0.20.2</a> 🖖
+    Done with  ♥  by <a style="font-weight: bold" href="https://www.linkedin.com/in/filipe1309/">0.20.2</a> 🖖
 </p>
 
 ---
 
-> @ Generated with [ShubcoGen™](https://github.com/filipe1309/shubcogen) {{ VERSION }}
+> @ Generated with [ShubcoGen™](https://github.com/filipe1309/shubcogen) 0.20.2
